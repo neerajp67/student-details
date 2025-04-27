@@ -1,0 +1,34 @@
+$toolbar-text-color: #1a1b1f;
+$active-indicator-color: #1a1b1f;
+$content-padding: 20px;
+
+mat-toolbar {
+  color: $toolbar-text-color;
+
+  span:first-child {
+    font-weight: bold;
+  }
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar button[mat-button] {
+  color: $toolbar-text-color;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+}
+
+.active-nav-button {
+  border-bottom: 3px solid $active-indicator-color;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.main-content {
+  padding: $content-padding;
+}

@@ -1,0 +1,70 @@
+.list-container {
+    padding: 20px;
+    max-width: 1200px; // Optional: Limit width on large screens
+    margin: 0 auto;
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  
+    h3 {
+      margin: 0;
+    }
+  
+    .filter-field {
+      width: 250px;
+      .mat-mdc-form-field-subscript-wrapper {
+          display: none;
+      }
+    }
+  }
+  
+  
+  .table-wrapper {
+    overflow: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .student-table {
+    width: 100%;
+  
+    .mat-column-actions {
+       width: 120px;
+       text-align: right;
+    }
+  
+    .mat-mdc-header-cell {
+        font-weight: bold;
+        font-size: 0.9em;
+        background-color: rgba(0,0,0, 0.03);
+    }
+  
+     .mat-mdc-cell {
+        padding: 10px 8px;
+     }
+  
+     .mat-mdc-row:hover .mat-mdc-cell {
+         background-color: rgba(0,0,0, 0.02);
+     }
+  
+     .mat-mdc-icon-button {
+          margin: 0 4px;
+     }
+  
+     .mat-row.mat-no-data-row .mat-cell {
+        text-align: center;
+        padding: 20px;
+        color: rgba(0, 0, 0, 0.54);
+        font-style: italic;
+     }
+  }
+  
+  mat-paginator {
+    border-top: 1px solid rgba(0,0,0, 0.12);
+  }
