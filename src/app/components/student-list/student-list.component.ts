@@ -62,7 +62,7 @@ export class StudentListComponent {
       if (currentSort && this.dataSource.sort !== currentSort) {
         this.dataSource.sort = currentSort;
       }
-    });
+    }, { allowSignalWrites: true });
   }
 
   applyFilter(filterValue: string): void {

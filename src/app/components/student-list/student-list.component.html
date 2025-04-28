@@ -58,7 +58,12 @@
 
             <tr class="mat-row" *matNoDataRow>
                 <td class="mat-cell" [attr.colspan]="displayedColumns().length">
-                    No data matching the filter "{{input.value}}"
+                    <span *ngIf="input.value; else noDataAvailableMsg">
+                        No data matching the filter "{{input.value}}"
+                    </span>
+                    <ng-template #noDataAvailableMsg>
+                        No data available.
+                    </ng-template>
                 </td>
             </tr>
 
