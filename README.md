@@ -7,7 +7,7 @@ Download/clone the project from https://github.com/neerajp67/student-details / h
 
 Open in your preffered copde editor
 
-Install node modules: run `npm instal`
+Install node modules: run `npm install`
 
 Run the project: run `ng serve`
 
